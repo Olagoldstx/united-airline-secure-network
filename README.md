@@ -6,13 +6,25 @@
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/SecureTheCloud.dev-United%20Airline%20Architecture-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Multi--Cloud-AWS%20%7C%20Azure%20%7C%20GCP-orange?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Security-Zero--Trust-red?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Course-8%20Volumes-brightgreen?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+## 📚 Volumes 0–8
 
-</p>
+| Vol | Title                             | Theory                                           | Lab                                            |
+|-----|-----------------------------------|--------------------------------------------------|------------------------------------------------|
+| V0  | Foundation                        | docs/theory/volume0-united-airline-foundation.md | —                                              |
+| V1  | Zero-to-Hardened AWS Hub          | docs/theory/volume1-zero-to-hardened-aws-hub.md  | labs/volume1-aws-hub/                          |
+| V2  | Egress Firewall & Inspection      | docs/theory/volume2-egress-inspection.md         | labs/volume2-egress-inspection/                |
+| V3  | Cross-Cloud Network               | docs/theory/volume3-cross-cloud-network.md       | labs/volume3-cross-cloud-network/              |
+| V4  | Identity Federation               | docs/theory/volume4-identity-federation.md       | labs/volume4-identity-federation/              |
+| V5  | Multi-Cloud KMS & Data Security   | docs/theory/volume5-data-kms.md                  | labs/volume5-data-kms/                         |
+| V6  | SIEM & SOAR                       | docs/theory/volume6-siem-soar.md                 | labs/volume6-siem-soar/                        |
+| V7  | Resilience & DR                   | docs/theory/volume7-resilience-dr.md             | labs/volume7-resilience-dr/                    |
+| V8  | AI, Analytics & Sustainability    | docs/theory/volume8-ai-sustainability.md         | labs/volume8-ai-sustainability/                |
+
+---
+
+## 📁 Directory Structure
+
+
 
 ---
 
