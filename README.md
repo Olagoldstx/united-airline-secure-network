@@ -57,7 +57,9 @@ subgraph Network["Network & Perimeter (V1–V3)"]
   TGW <---> VWAN
   TGW <---> GCPR
 end
+```
 
+```mermaid
 %% LAYER 4: IDENTITY
 subgraph Identity["Identity & Access (V4)"]
   ENTRA[Microsoft Entra ID]
@@ -66,6 +68,7 @@ subgraph Identity["Identity & Access (V4)"]
   ENTRA --> AWS_SSO
   ENTRA --> GCP_WIF
 end
+```
 
 %% LAYER 5: DATA
 subgraph Data["Data Security & KMS (V5)"]
