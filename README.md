@@ -1,19 +1,41 @@
-✈️ United Airline — Secure Multi-Cloud Architecture (Volumes 0–8)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Olagoldstx/united-airline-secure-network/main/docs/branding/securethecloud.png" 
+       alt="SecureTheCloud Banner" 
+       width="80%"/>
+</p>
 
-A complete, enterprise-grade, multi-cloud architecture built across AWS, Azure, and GCP, following Zero-Trust, Defense-in-Depth, and Airline-class resilience standards.
+<p align="center">
 
-🛡️ Project Status
+<img src="https://img.shields.io/badge/SecureTheCloud.dev-United%20Airline%20Architecture-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Multi--Cloud-AWS%20%7C%20Azure%20%7C%20GCP-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Security-Zero--Trust-red?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Course-8%20Volumes-brightgreen?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
 
+</p>
 
+---
 
+# ✈️ United Airline – Multi-Cloud Secure Architecture (Volumes 0–8)
 
+A complete **airline-style** enterprise architecture across **AWS, Azure, and GCP**, built as a teaching, portfolio, and consulting asset for **SecureTheCloud.dev**.
 
+---
 
+## 📚 Table of Contents
 
+- [Architecture Overview](#-architecture-overview)
+- [Quick Navigation](#-quick-navigation)
+- [Volumes 0–8](#-volumes-0-8)
+- [Directory Structure](#-directory-structure)
+- [Security & Support](#-security--support)
+- [About](#-about)
 
-All badges above link to real sections in this README.
+---
 
-🗺️ Architecture Overview (Everything at a Glance)
+## 🗺 Architecture Overview
+
+```mermaid
 flowchart TB
 
 subgraph Network["Network & Perimeter (V1–V3)"]
@@ -59,99 +81,100 @@ subgraph Resilience["Resilience & DR (V7)"]
   GCP_DR[GCP DR]
 end
 
-subgraph AI["AI, Analytics & Sustainability (V8)"]
+subgraph AI["AI & Sustainability (V8)"]
   KINESIS[AWS Kinesis]
   SYN[Azure Synapse]
   BIGQ[BigQuery]
   VAI[Vertex AI]
   KINESIS --> SYN --> BIGQ --> VAI
 end
+```
+---
 
-📚 Binder Volumes
+<p align="center">
+  <a href="#-volumes-0-8">
+    <img src="https://img.shields.io/badge/Start-Volumes%200–8-blue?style=for-the-badge" alt="Start Volumes 0-8"/>
+  </a>
 
-Each volume includes:
-✔ Theory (textbook style)
-✔ Lab (Terraform + scripts)
-✔ Architecture diagram
-✔ Binder “Errors & Fixes”
+  <a href="docs/theory/">
+    <img src="https://img.shields.io/badge/Open-Theory%20Library-8A2BE2?style=for-the-badge" alt="Theory Library"/>
+  </a>
 
-Volume Index (Clickable)
+  <a href="labs/">
+    <img src="https://img.shields.io/badge/Launch-Hands--On%20Labs-orange?style=for-the-badge" alt="Hands-On Labs"/>
+  </a>
+
+  <a href="diagrams/">
+    <img src="https://img.shields.io/badge/View-Architecture%20Diagrams-brightgreen?style=for-the-badge" alt="Architecture Diagrams"/>
+  </a>
+</p>
+
+
+
+📚 Volumes 0–8
+
+Each volume has:
+
+📘 Theory — textbook-style explanation
+
+🧪 Lab — Terraform + scripts
+
+🖼 Diagrams — Mermaid/visuals
+
+📝 Binder — “Errors & Fixes” notes
+
 Vol	Title	Theory	Lab
-V0	Foundation	Theory
-	—
-V1	Zero-to-Hardened AWS Hub	Theory
-	Lab
-
-V2	Egress Firewall + DPI	Theory
-	Lab
-
-V3	Cross-Cloud Network (AWS ↔ Azure ↔ GCP)	Theory
-	Lab
-
-V4	Identity Federation (Entra → AWS/GCP)	Theory
-	Lab
-
-V5	Multi-Cloud KMS & Data Security	Theory
-	Lab
-
-V6	SIEM & SOAR	Theory
-	Lab
-
-V7	Resilience & DR	Theory
-	Lab
-
-V8	AI, Analytics & Sustainability	Theory
-	Lab
-💾 (Optional) Master Binder PDFs
-
-(To be re-generated later)
-
-Volumes 1–4 Binder
-
-Volumes 5–8 Binder
-
-(PDF generation is currently paused until ready to export.)
-
-🎯 Purpose of This Repository
-
-This repo is:
-
-A full enterprise multi-cloud reference architecture
-
-A Zero-Trust security blueprint
-
-A portfolio project for real consulting
-
-A teaching reference for SecureTheCloud.dev
-
-A production-ready example for highly regulated industries (like airlines)
-
-🧩 Folder Structure
+V0	Foundation	docs/theory/volume0-united-airline-foundation.md	—
+V1	Zero-to-Hardened AWS Hub	docs/theory/volume1-zero-to-hardened-aws-hub.md	labs/volume1-aws-hub/
+V2	Egress Firewall & Inspection	docs/theory/volume2-egress-inspection.md	labs/volume2-egress-inspection/
+V3	Cross-Cloud Network (AWS/Azure/GCP)	docs/theory/volume3-cross-cloud-network.md	labs/volume3-cross-cloud-network/
+V4	Identity Federation (Entra → AWS/GCP)	docs/theory/volume4-identity-federation.md	labs/volume4-identity-federation/
+V5	Multi-Cloud KMS & Data Security	docs/theory/volume5-data-kms.md	labs/volume5-data-kms/
+V6	SIEM & SOAR	docs/theory/volume6-siem-soar.md	labs/volume6-siem-soar/
+V7	Resilience & DR	docs/theory/volume7-resilience-dr.md	labs/volume7-resilience-dr/
+V8	AI, Analytics & Sustainability	docs/theory/volume8-ai-sustainability.md	labs/volume8-ai-sustainability/
+📁 Directory Structure
 united-airline-secure-network/
-│
-├── docs/
-│   ├── theory/      # All volume theories
-│   ├── binder/      # PDFs (future)
-│   └── architecture/ 
-│
-├── labs/
-│   ├── volume1-aws-hub/
-│   ├── volume2-egress-inspection/
-│   ├── volume3-cross-cloud-network/
-│   ├── volume4-identity-federation/
-│   ├── volume5-data-kms/
-│   ├── volume6-siem-soar/
-│   ├── volume7-resilience-dr/
-│   └── volume8-ai-sustainability/
-│
-├── terraform/
-│   ├── envs/
-│   └── modules/
-│
-└── diagrams/
+├─ docs/
+│  ├─ theory/          # All volume theory chapters
+│  ├─ binder/          # (Future) master PDFs
+│  └─ architecture/    # Diagrams & mermaid files
+├─ labs/
+│  ├─ volume1-aws-hub/
+│  ├─ volume2-egress-inspection/
+│  ├─ volume3-cross-cloud-network/
+│  ├─ volume4-identity-federation/
+│  ├─ volume5-data-kms/
+│  ├─ volume6-siem-soar/
+│  ├─ volume7-resilience-dr/
+│  └─ volume8-ai-sustainability/
+├─ diagrams/
+├─ terraform/
+└─ docs/branding/securethecloud.png
 
-🙌 Credits
+🔐 Security & Support
+
+See:
+
+SECURITY.md
+ – how to responsibly report vulnerabilities
+
+SUPPORT.md
+ – how to get help, training, or consulting
+(GitHub issues, email channels, response times)
+
+🧠 About
 
 Created by Ola Omoniyi (Olagoldstx)
 Founder — SecureTheCloud.dev
-Multi-Cloud Security Architect | AWS | Azure | GCP | Kubernetes | Zero-Trust | DevSecOps
+Multi-Cloud Security Architect (AWS | Azure | GCP | Kubernetes | Zero-Trust | DevSecOps)
+
+This repository is part of the SecureTheCloud.dev Airline Series — built to be:
+
+A teaching tool
+
+A portfolio centerpiece
+
+A consulting accelerator
+
+A living multi-cloud security reference
