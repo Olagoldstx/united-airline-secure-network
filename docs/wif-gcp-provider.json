@@ -1,0 +1,12 @@
+{
+  "name": "projects/973064685337/locations/global/workloadIdentityPools/gh-oidc/providers/github",
+  "displayName": "GitHub OIDC",
+  "attributeMapping": {
+    "google.subject": "assertion.sub",
+    "attribute.actor": "assertion.actor",
+    "attribute.repository": "assertion.repository"
+  },
+  "oidc": {
+    "issuerUri": "https://token.actions.githubusercontent.com"
+  }
+}
