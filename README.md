@@ -37,57 +37,57 @@ A complete **airline-style** enterprise architecture across **AWS, Azure, and GC
 
 ```mermaid
 flowchart TB
+    subgraph FOUNDATION[Foundation & Governance]
+        direction TB
+        subgraph NET[Network & Perimeter Security]
+            HUB[AWS Hub VPC]
+            FW[Egress Firewall]
+            TGW[AWS Transit Gateway]
+            HUB --> FW --> TGW
+            TGW <---> VWAN[Azure vWAN]
+            TGW <---> GCPR[GCP Cloud Router]
+        end
 
-subgraph Network["Network & Perimeter (V1–V3)"]
-  HUB[AWS Hub VPC]
-  FW[Egress Firewall (NFW + GWLB)]
-  TGW[AWS TGW]
-  VWAN[Azure vWAN]
-  GCPR[GCP Cloud Router]
-  HUB --> FW --> TGW
-  TGW <---> VWAN
-  TGW <---> GCPR
-end
+        subgraph IAM[Identity & Access Management]
+            ENTRA[Microsoft Entra ID]
+            ENTRA --> AWS_SSO[AWS IAM Identity Center]
+            ENTRA --> GCP_WIF[GCP Workforce Identity Fed.]
+        end
 
-subgraph Identity["Identity & Access (V4)"]
-  ENTRA[Microsoft Entra ID]
-  AWS_SSO[AWS IAM Identity Center]
-  GCP_WIF[GCP Workforce Identity Federation]
-  ENTRA --> AWS_SSO
-  ENTRA --> GCP_WIF
-end
+        subgraph SEC[Data Security & Encryption]
+            AWS_KMS[AWS KMS]
+            AZ_KV[Azure Key Vault]
+            GCP_KMS[GCP Cloud KMS]
+            AWS_KMS <---> AZ_KV
+            AWS_KMS <---> GCP_KMS
+        end
+    end
 
-subgraph Data["Data Security (V5)"]
-  AWS_KMS[AWS KMS]
-  AZ_KV[Azure Key Vault]
-  GCP_KMS[GCP Cloud KMS]
-  AWS_KMS <---> AZ_KV
-  AWS_KMS <---> GCP_KMS
-end
+    subgraph OPERATIONS[Security & Business Operations]
+        direction TB
+        subgraph SIEM[SIEM & Threat Detection]
+            SENT[Microsoft Sentinel]
+            GD[AWS GuardDuty] --> SENT
+            SCC[GCP Security Command Center] --> SENT
+            LOGS[DNS & FW Logs] --> SENT
+        end
 
-subgraph Detection["SIEM & SOAR (V6)"]
-  SENT[Microsoft Sentinel]
-  GD[GuardDuty]
-  SCC[GCP SCC]
-  LOGS[DNS + Firewall Logs]
-  GD --> SENT
-  SCC --> SENT
-  LOGS --> SENT
-end
+        subgraph DR[Resilience & Disaster Recovery]
+            AWS_DR[AWS DR Region]
+            AZ_DR[Azure DR Region]
+            GCP_DR[GCP DR Region]
+        end
 
-subgraph Resilience["Resilience & DR (V7)"]
-  AWS_DR[AWS DR Region]
-  AZ_DR[Azure DR]
-  GCP_DR[GCP DR]
-end
+        subgraph AI[AI, Analytics & Sustainability]
+            KINESIS[AWS Kinesis]
+            SYN[Azure Synapse]
+            BIGQ[BigQuery]
+            VAI[Vertex AI]
+            KINESIS --> SYN --> BIGQ --> VAI
+        end
+    end
 
-subgraph AI["AI & Sustainability (V8)"]
-  KINESIS[AWS Kinesis]
-  SYN[Azure Synapse]
-  BIGQ[BigQuery]
-  VAI[Vertex AI]
-  KINESIS --> SYN --> BIGQ --> VAI
-end
+    FOUNDATION --> OPERATIONS
 ```
 ---
 
