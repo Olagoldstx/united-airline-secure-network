@@ -5,20 +5,21 @@
 </p>
 
 <p align="center">
-
+---
 ## 📚 Volumes 0–8
 
-| Vol | Title                             | Theory                                           | Lab                                            |
-|-----|-----------------------------------|--------------------------------------------------|------------------------------------------------|
-| V0  | Foundation                        | docs/theory/volume0-united-airline-foundation.md | —                                              |
-| V1  | Zero-to-Hardened AWS Hub          | docs/theory/volume1-zero-to-hardened-aws-hub.md  | labs/volume1-aws-hub/                          |
-| V2  | Egress Firewall & Inspection      | docs/theory/volume2-egress-inspection.md         | labs/volume2-egress-inspection/                |
-| V3  | Cross-Cloud Network               | docs/theory/volume3-cross-cloud-network.md       | labs/volume3-cross-cloud-network/              |
-| V4  | Identity Federation               | docs/theory/volume4-identity-federation.md       | labs/volume4-identity-federation/              |
-| V5  | Multi-Cloud KMS & Data Security   | docs/theory/volume5-data-kms.md                  | labs/volume5-data-kms/                         |
-| V6  | SIEM & SOAR                       | docs/theory/volume6-siem-soar.md                 | labs/volume6-siem-soar/                        |
-| V7  | Resilience & DR                   | docs/theory/volume7-resilience-dr.md             | labs/volume7-resilience-dr/                    |
-| V8  | AI, Analytics & Sustainability    | docs/theory/volume8-ai-sustainability.md         | labs/volume8-ai-sustainability/                |
+| Vol | Title | Theory | Lab |
+|-----|--------|--------|------|
+| **V0** | [Foundation](docs/theory/volume0-united-airline-foundation.md) | [Theory](docs/theory/volume0-united-airline-foundation.md) | — |
+| **V1** | [Zero-to-Hardened AWS Hub](docs/theory/volume1-zero-to-hardened-aws-hub.md) | [Theory](docs/theory/volume1-zero-to-hardened-aws-hub.md) | [Lab](labs/volume1-aws-hub/) |
+| **V2** | [Egress Firewall & Inspection](docs/theory/volume2-egress-inspection.md) | [Theory](docs/theory/volume2-egress-inspection.md) | [Lab](labs/volume2-egress-inspection/) |
+| **V3** | [Cross-Cloud Network (AWS/Azure/GCP)](docs/theory/volume3-cross-cloud-network.md) | [Theory](docs/theory/volume3-cross-cloud-network.md) | [Lab](labs/volume3-cross-cloud-network/) |
+| **V4** | [Identity Federation (Entra → AWS/GCP)](docs/theory/volume4-identity-federation.md) | [Theory](docs/theory/volume4-identity-federation.md) | [Lab](labs/volume4-identity-federation/) |
+| **V5** | [Multi-Cloud KMS & Data Security](docs/theory/volume5-data-kms.md) | [Theory](docs/theory/volume5-data-kms.md) | [Lab](labs/volume5-data-kms/) |
+| **V6** | [SIEM & SOAR](docs/theory/volume6-siem-soar.md) | [Theory](docs/theory/volume6-siem-soar.md) | [Lab](labs/volume6-siem-soar/) |
+| **V7** | [Resilience & DR](docs/theory/volume7-resilience-dr.md) | [Theory](docs/theory/volume7-resilience-dr.md) | [Lab](labs/volume7-resilience-dr/) |
+| **V8** | [AI, Analytics & Sustainability](docs/theory/volume8-ai-sustainability.md) | [Theory](docs/theory/volume8-ai-sustainability.md) | [Lab](labs/volume8-ai-sustainability/) |
+
 
 ---
 
