@@ -234,3 +234,61 @@ Your United Airline network has officially begun.
 Proceed to:
 
 👉 Volume 2 — Centralized Egress & Inspection (AWS Network Firewall + GWLB)
+
+---
+
+# 🔬 United Airline — Volume X Lab
+## <Title of Lab>
+
+---
+
+## 🎯 Objectives
+- Clear  
+- Actionable  
+- What student will learn  
+
+---
+
+## 🗺️ Architecture View
+
+```mermaid
+<INSERT LAB DIAGRAM HERE>
+📦 Prerequisites
+Terraform version
+
+Cloud credentials
+
+Required tools
+
+🚀 Steps
+1. Initialize
+csharp
+Copy code
+terraform init
+2. Plan
+nginx
+Copy code
+terraform plan
+3. Apply
+nginx
+Copy code
+terraform apply
+🔍 Validation Checklist
+ VPC created
+
+ Subnets correct
+
+ Firewalls working
+
+ Logs flowing
+
+🧪 Troubleshooting
+Issue	Cause	Fix
+403	Missing IAM permission	Add IAM policy
+Fail to deploy	Wrong region	Update vars
+
+📝 Binder — Errors & Fixes (Fill During Real Deployment)
+csharp
+Copy code
+[YYYY-MM-DD] Error encountered...
+Fix applied...
