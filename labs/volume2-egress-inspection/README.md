@@ -113,6 +113,9 @@ flowchart LR
 
   NFW --> DNSF[DNS Filtering / Suricata Rules]
   DNSF --> LOGS[Firewall Logs → CloudWatch]
+```
+---
+
 🚀 5. Deployment Steps
 ✅ Step 1 — Navigate to the lab environment
 bash
