@@ -83,6 +83,7 @@ Copy code
 
 ```mermaid
 flowchart LR
+flowchart LR
   APP[App Subnets] --> RT1[Updated Route Tables]
   DATA[Data Subnets] --> RT2[Updated Route Tables]
   MGMT[Mgmt Subnets] --> RT3[Updated Route Tables]
@@ -91,7 +92,7 @@ flowchart LR
   RT2 --> EP2[GWLB Endpoint]
   RT3 --> EP3[GWLB Endpoint]
 
-  subgraph Hub VPC
+  subgraph Hub_VPC [Hub VPC]
     APP
     DATA
     MGMT
@@ -101,18 +102,20 @@ flowchart LR
   end
 
   EP1 --> GWLB[Gateway Load Balancer]
+  EP2 --> GWLB
+  EP3 --> GWLB
   GWLB --> NFW[AWS Network Firewall<br>Deep Packet Inspection]
 
-  subgraph Inspection VPC
+  subgraph Inspection_VPC [Inspection VPC]
     GWLB
     NFW
   end
 
-  NFW --> NAT[NAT or IGW (controlled)]
+  NFW --> NAT[NAT or IGW - controlled]
   NAT --> INTERNET((Internet))
 
   NFW --> DNSF[DNS Filtering / Suricata Rules]
-  DNSF --> LOGS[Firewall Logs → CloudWatch]
+  DNSF --> LOGS[Firewall Logs → CloudWatch] → CloudWatch]
 ```
 
 
