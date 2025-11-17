@@ -231,29 +231,46 @@ united-airline-secure-network/
 ├─ terraform/
 └─ docs/branding/securethecloud.png
 
-🔐 Security & Support
+---
 
-See:
+## 🔐 Security & Support
 
-SECURITY.md
- – how to responsibly report vulnerabilities
+### **🔒 Security Policy**
+See **[`SECURITY.md`](SECURITY.md)** for:
 
-SUPPORT.md
- – how to get help, training, or consulting
-(GitHub issues, email channels, response times)
+- Responsible disclosure process  
+- Severity levels  
+- SecureTheCloud.dev contact channels  
+- SLA for security-related responses  
 
-🧠 About
+### **🆘 Need Help?**
+Visit **[`SUPPORT.md`](SUPPORT.md)** for:
 
-Created by Ola Omoniyi (Olagoldstx)
-Founder — SecureTheCloud.dev
-Multi-Cloud Security Architect (AWS | Azure | GCP | Kubernetes | Zero-Trust | DevSecOps)
+- Documentation links  
+- GitHub Issues support  
+- Consulting inquiries  
+- Training / speaking requests  
+- Response time expectations  
 
-This repository is part of the SecureTheCloud.dev Airline Series — built to be:
+---
 
-A teaching tool
+## 🧠 About
 
-A portfolio centerpiece
+### **👨🏽‍✈️ Created by:**
+**Ola Omoniyi (Olagoldstx)**  
+Founder — **SecureTheCloud.dev**
 
-A consulting accelerator
+### **💼 Expertise**
+AWS • Azure • GCP  
+Kubernetes • Zero-Trust • IAM • KMS • SIEM • Multi-Cloud Architecture
 
-A living multi-cloud security reference
+### **📘 Purpose of This Repository**
+This project is part of the **SecureTheCloud.dev Airline Series**, designed to be:
+
+- 🎓 A teaching tool for multi-cloud architects  
+- 💼 A portfolio centerpiece for senior cloud roles  
+- 🛡 A Zero-Trust / Multi-Cloud security blueprint  
+- 🚀 A consulting accelerator for regulated industries  
+- 📚 A living knowledge base with theory + hands-on labs  
+
+---
