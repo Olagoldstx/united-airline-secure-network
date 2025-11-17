@@ -100,6 +100,8 @@ end
 AWSTGW <-- IPsec+BGP --> VWGW
 AWSTGW <-- IPsec+BGP --> GCPVPN
 VWGW <-- IPsec+BGP --> GCPVPN
+```
+
 🛠️ 4. Prerequisites
 From previous volumes:
 
