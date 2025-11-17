@@ -8,77 +8,107 @@
 ---
 ## 📚 Volumes 0–8
 
-<p align="center"><em>Click a title, theory, or lab to jump into that module.</em></p>
+<p align="center"><em>Select a module to jump into the theory or lab.</em></p>
+
+---
+
+### 🧭 **Volume 0 — Foundation**  
+#### <img src="https://img.icons8.com/color/48/000000/cloud.png" width="28"/> Cloud Concepts · Airline Digital Basics  
+A lightweight intro to multi-cloud, airline digital systems, Zero-Trust, and this entire architecture series.
 
 <p align="center">
-  <table>
-    <thead>
-      <tr>
-        <th align="center">Vol</th>
-        <th align="left">Title</th>
-        <th align="center">Theory</th>
-        <th align="center">Lab</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td align="center"><strong>V0</strong></td>
-        <td><a href="docs/theory/volume0-united-airline-foundation.md">Foundation</a></td>
-        <td align="center"><a href="docs/theory/volume0-united-airline-foundation.md">Theory</a></td>
-        <td align="center">—</td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V1</strong></td>
-        <td><a href="docs/theory/volume1-zero-to-hardened-aws-hub.md">Zero-to-Hardened AWS Hub</a></td>
-        <td align="center"><a href="docs/theory/volume1-zero-to-hardened-aws-hub.md">Theory</a></td>
-        <td align="center"><a href="labs/volume1-aws-hub/">Lab</a></td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V2</strong></td>
-        <td><a href="docs/theory/volume2-egress-inspection.md">Egress Firewall &amp; Inspection</a></td>
-        <td align="center"><a href="docs/theory/volume2-egress-inspection.md">Theory</a></td>
-        <td align="center"><a href="labs/volume2-egress-inspection/">Lab</a></td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V3</strong></td>
-        <td><a href="docs/theory/volume3-cross-cloud-network.md">Cross-Cloud Network (AWS/Azure/GCP)</a></td>
-        <td align="center"><a href="docs/theory/volume3-cross-cloud-network.md">Theory</a></td>
-        <td align="center"><a href="labs/volume3-cross-cloud-network/">Lab</a></td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V4</strong></td>
-        <td><a href="docs/theory/volume4-identity-federation.md">Identity Federation (Entra → AWS/GCP)</a></td>
-        <td align="center"><a href="docs/theory/volume4-identity-federation.md">Theory</a></td>
-        <td align="center"><a href="labs/volume4-identity-federation/">Lab</a></td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V5</strong></td>
-        <td><a href="docs/theory/volume5-data-kms.md">Multi-Cloud KMS &amp; Data Security</a></td>
-        <td align="center"><a href="docs/theory/volume5-data-kms.md">Theory</a></td>
-        <td align="center"><a href="labs/volume5-data-kms/">Lab</a></td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V6</strong></td>
-        <td><a href="docs/theory/volume6-siem-soar.md">SIEM &amp; SOAR</a></td>
-        <td align="center"><a href="docs/theory/volume6-siem-soar.md">Theory</a></td>
-        <td align="center"><a href="labs/volume6-siem-soar/">Lab</a></td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V7</strong></td>
-        <td><a href="docs/theory/volume7-resilience-dr.md">Resilience &amp; DR</a></td>
-        <td align="center"><a href="docs/theory/volume7-resilience-dr.md">Theory</a></td>
-        <td align="center"><a href="labs/volume7-resilience-dr/">Lab</a></td>
-      </tr>
-      <tr>
-        <td align="center"><strong>V8</strong></td>
-        <td><a href="docs/theory/volume8-ai-sustainability.md">AI, Analytics &amp; Sustainability</a></td>
-        <td align="center"><a href="docs/theory/volume8-ai-sustainability.md">Theory</a></td>
-        <td align="center"><a href="labs/volume8-ai-sustainability/">Lab</a></td>
-      </tr>
-    </tbody>
-  </table>
+  <a href="docs/theory/volume0-united-airline-foundation.md"><img src="https://img.shields.io/badge/📘_Theory-Foundation-blue?style=for-the-badge" /></a>
 </p>
 
+---
+
+### 🛡️ **Volume 1 — Zero-to-Hardened AWS Hub**  
+#### <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" width="28"/> AWS · Private VPC · Segmentation  
+Build a **private-only hub** with VPC segmentation, DNS controls, and baseline observability (Flow Logs).
+
+<p align="center">
+  <a href="docs/theory/volume1-zero-to-hardened-aws-hub.md"><img src="https://img.shields.io/badge/📘_Theory-Zero--to--Hardened_AWS_Hub-blue?style=for-the-badge&logo=amazonaws" /></a>
+  <a href="labs/volume1-aws-hub/"><img src="https://img.shields.io/badge/🧪_Lab-AWS_Hub-orange?style=for-the-badge" /></a>
+</p>
+
+---
+
+### 🔥 **Volume 2 — Egress Firewall & Deep Inspection**  
+#### <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" width="28"/> AWS · Network Firewall · GWLB  
+Centralized egress inspection with AWS Network Firewall, Suricata rules, FQDN allowlists, and DNS filtering.
+
+<p align="center">
+  <a href="docs/theory/volume2-egress-inspection.md"><img src="https://img.shields.io/badge/📘_Theory-Egress_Firewall-red?style=for-the-badge&logo=amazonaws" /></a>
+  <a href="labs/volume2-egress-inspection/"><img src="https://img.shields.io/badge/🧪_Lab-Egress-orange?style=for-the-badge" /></a>
+</p>
+
+---
+
+### 🌍 **Volume 3 — Cross-Cloud Network (AWS ↔ Azure ↔ GCP)**  
+#### <img src="https://img.icons8.com/color/48/000000/cloud-network.png" width="28"/> Multi-Cloud Routing · TGW · vWAN · Cloud Router  
+Create a private global mesh using IPSec + BGP: AWS TGW ↔ Azure vWAN ↔ GCP Cloud Router.
+
+<p align="center">
+  <a href="docs/theory/volume3-cross-cloud-network.md"><img src="https://img.shields.io/badge/📘_Theory-Cross_Cloud_Network-blue?style=for-the-badge&logo=googlecloud" /></a>
+  <a href="labs/volume3-cross-cloud-network/"><img src="https://img.shields.io/badge/🧪_Lab-Network-orange?style=for-the-badge" /></a>
+</p>
+
+---
+
+### 🔐 **Volume 4 — Identity Federation (Entra → AWS/GCP)**  
+#### <img src="https://img.icons8.com/color/48/000000/azure-1.png" width="28"/> Azure Entra ID · SAML · SCIM · OIDC  
+Unified workforce identity: Entra SSO → AWS IAM Identity Center + GCP Workforce Identity Federation.
+
+<p align="center">
+  <a href="docs/theory/volume4-identity-federation.md"><img src="https://img.shields.io/badge/📘_Theory-Identity_Federation-purple?style=for-the-badge&logo=microsoftazure" /></a>
+  <a href="labs/volume4-identity-federation/"><img src="https://img.shields.io/badge/🧪_Lab-Federation-orange?style=for-the-badge" /></a>
+</p>
+
+---
+
+### 🔒 **Volume 5 — Multi-Cloud KMS & Data Security**  
+#### <img src="https://img.icons8.com/color/48/000000/key-security.png" width="28"/> AWS KMS · Azure Key Vault · GCP KMS  
+Unified key hierarchy, envelope encryption, rotation, and data protection across AWS, Azure, and GCP.
+
+<p align="center">
+  <a href="docs/theory/volume5-data-kms.md"><img src="https://img.shields.io/badge/📘_Theory-Multi_Cloud_KMS-green?style=for-the-badge&logo=amazonaws" /></a>
+  <a href="labs/volume5-data-kms/"><img src="https://img.shields.io/badge/🧪_Lab-KMS-orange?style=for-the-badge" /></a>
+</p>
+
+---
+
+### 👁️ **Volume 6 — SIEM & SOAR**
+#### <img src="https://img.icons8.com/color/48/000000/monitor--v1.png" width="28"/> Sentinel · GuardDuty · SCC · Automation  
+Centralized logging + cross-cloud SIEM + automated response with Logic Apps, AWS API, GCP API.
+
+<p align="center">
+  <a href="docs/theory/volume6-siem-soar.md"><img src="https://img.shields.io/badge/📘_Theory-SIEM_&_SOAR-blue?style=for-the-badge&logo=microsoftazure" /></a>
+  <a href="labs/volume6-siem-soar/"><img src="https://img.shields.io/badge/🧪_Lab-SOAR-orange?style=for-the-badge" /></a>
+</p>
+
+---
+
+### 🌪️ **Volume 7 — Resilience & Disaster Recovery**
+#### <img src="https://img.icons8.com/color/48/000000/region-code.png" width="28"/> Multi-Region · Multi-Cloud · Chaos Engineering  
+Airline-grade continuity: DNS failover, KMS multi-region replication, cross-cloud DR, chaos testing.
+
+<p align="center">
+  <a href="docs/theory/volume7-resilience-dr.md"><img src="https://img.shields.io/badge/📘_Theory-Resilience_&_DR-darkgreen?style=for-the-badge" /></a>
+  <a href="labs/volume7-resilience-dr/"><img src="https://img.shields.io/badge/🧪_Lab-DR-orange?style=for-the-badge" /></a>
+</p>
+
+---
+
+### 🤖 **Volume 8 — AI, Analytics & Sustainability**
+#### <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" width="28"/> Vertex AI · BigQuery · Kinesis · Synapse  
+Multi-cloud AI pipeline: ingestion → lake → Synapse → BigQuery → Vertex AI + CO₂/fuel analytics.
+
+<p align="center">
+  <a href="docs/theory/volume8-ai-sustainability.md"><img src="https://img.shields.io/badge/📘_Theory-AI_&_Sustainability-yellow?style=for-the-badge&logo=googlecloud" /></a>
+  <a href="labs/volume8-ai-sustainability/"><img src="https://img.shields.io/badge/🧪_Lab-AI-orange?style=for-the-badge" /></a>
+</p>
+
+---
 
 ---
 
