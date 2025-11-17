@@ -83,7 +83,6 @@ flowchart TD
   RT --> NF[Future: Network Firewall<br>(Volume 2)]
   A --> DNS[Route53 Resolver<br>Inbound/Outbound]
   A --> LOGS[VPC Flow Logs<br>CloudWatch]
-
   subgraph Hub VPC
     A
     RT
