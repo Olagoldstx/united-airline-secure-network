@@ -74,7 +74,6 @@ flowchart TD
     
     INTERNET((No IGW<br>No Public Subnets))
 ```
----
 
 🛡️ 4. Security Principles Implemented
 1) Zero Public Exposure
