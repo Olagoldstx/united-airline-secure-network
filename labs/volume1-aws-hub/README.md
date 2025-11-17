@@ -78,17 +78,19 @@ Copy code
 # 🧱 4. Architecture Diagram (Day-1 Hub)
 
 ```mermaid
-flowchart TD
-  A[Private Subnets<br>app/data/mgmt] --> RT[Route Tables<br>Default-Deny]
-  RT --> NF[Future: Network Firewall<br>(Volume 2)]
-  A --> DNS[Route53 Resolver<br>Inbound/Outbound]
-  A --> LOGS[VPC Flow Logs<br>CloudWatch]
-  subgraph Hub VPC
-    A
-    RT
-    DNS
-    LOGS
-  end
+
+```flowchart TD
+    A[Private Subnets<br>app/data/mgmt] --> RT[Route Tables<br>Default-Deny]
+    RT --> NF[Future: Network Firewall<br>Volume 2]
+    A --> DNS[Route53 Resolver<br>Inbound/Outbound]
+    A --> LOGS[VPC Flow Logs<br>CloudWatch]
+    
+    subgraph Hub_VPC [Hub VPC]
+        A
+        RT
+        DNS
+        LOGS
+    end
 ```
 
   INTERNET((No IGW<br>No Public Subnets))
