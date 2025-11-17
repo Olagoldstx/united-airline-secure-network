@@ -56,7 +56,7 @@ Below is the architectural flow of the hardened Hub:
 ```mermaid
 flowchart TD
     A[Private Subnets<br>app/data/mgmt] --> RT[Route Tables<br>Default-Deny]
-    RT --> NAT[NAT (Optional later)]
+    RT --> NAT[NAT - Optional later]
     RT --> EGRESS[Future: Central Egress Firewall<br>GWLB + Network Firewall]
     
     A --> DNS[Route53 Resolver<br>Inbound/Outbound]
