@@ -114,7 +114,7 @@ flowchart LR
   NAT --> INTERNET((Internet))
 
   NFW --> DNSF[DNS Filtering / Suricata Rules]
-  DNSF --> LOGS[Firewall Logs → CloudWatch] → CloudWatch]
+  DNSF --> LOGS[Firewall Logs → CloudWatch]
 ```
 
 
