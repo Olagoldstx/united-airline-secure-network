@@ -90,6 +90,7 @@ flowchart TD
     DNS
     LOGS
   end
+```
 
   INTERNET((No IGW<br>No Public Subnets))
 🚀 5. Step-by-Step Deployment
