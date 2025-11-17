@@ -82,7 +82,6 @@ Copy code
 # 🧱 4. Architecture Diagram
 
 ```mermaid
-
 flowchart LR
   APP[App Subnets] --> RT1[Updated Route Tables]
   DATA[Data Subnets] --> RT2[Updated Route Tables]
