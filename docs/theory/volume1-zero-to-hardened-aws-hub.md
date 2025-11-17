@@ -53,25 +53,28 @@ That’s exactly what we’re building.
 
 Below is the architectural flow of the hardened Hub:
 
+```mermaid
 flowchart TD
-  A[Private Subnets<br>app/data/mgmt] --> RT[Route Tables<br>Default-Deny]
-  RT --> NAT[NAT (Optional later)]
-  RT --> EGRESS[Future: Central Egress Firewall<br>(GWLB + Network Firewall)]
-  
-  A --> DNS[Route53 Resolver<br>Inbound/Outbound]
-  A --> LOGS[VPC Flow Logs<br>CloudWatch]
-  
-  subgraph Hub VPC
-    A
-    RT
-    DNS
-    LOGS
-  end
-  
-  CLOUD[Other Clouds<br>Azure + GCP] --> TGW[Future: TGW Attachments]
-  TGW --> Hub VPC
-  
-  INTERNET((No IGW<br>No Public Subnets))
+    A[Private Subnets<br>app/data/mgmt] --> RT[Route Tables<br>Default-Deny]
+    RT --> NAT[NAT (Optional later)]
+    RT --> EGRESS[Future: Central Egress Firewall<br>GWLB + Network Firewall]
+    
+    A --> DNS[Route53 Resolver<br>Inbound/Outbound]
+    A --> LOGS[VPC Flow Logs<br>CloudWatch]
+    
+    subgraph Hub_VPC [Hub VPC]
+        A
+        RT
+        DNS
+        LOGS
+    end
+    
+    CLOUD[Other Clouds<br>Azure + GCP] --> TGW[Future: TGW Attachments]
+    TGW --> Hub_VPC
+    
+    INTERNET((No IGW<br>No Public Subnets))
+```
+---
 
 🛡️ 4. Security Principles Implemented
 1) Zero Public Exposure
