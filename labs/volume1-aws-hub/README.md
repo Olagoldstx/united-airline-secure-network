@@ -75,11 +75,10 @@ Copy code
 
 ---
 
-# 🧱 4. Architecture Diagram (Day-1 Hub)
+# 🧱 4. Architecture Diagram (Day-1 )
 
-```mermaid
-
-```flowchart TD
+```mermaid 
+flowchart TD
     A[Private Subnets<br>app/data/mgmt] --> RT[Route Tables<br>Default-Deny]
     RT --> NF[Future: Network Firewall<br>Volume 2]
     A --> DNS[Route53 Resolver<br>Inbound/Outbound]
