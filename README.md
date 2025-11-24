@@ -1,3 +1,18 @@
+<!-- BADGES:START -->
+
+<div align="left">
+[![](https://img.shields.io/github/license/Olagoldstx/united-airline-secure-network?style=for-the-badge&labelColor=0f172a)](https://github.com/Olagoldstx/united-airline-secure-network)
+[![](https://img.shields.io/github/stars/Olagoldstx/united-airline-secure-network?style=for-the-badge&labelColor=0f172a&logo=github)](https://github.com/Olagoldstx/united-airline-secure-network)
+[![](https://img.shields.io/github/last-commit/Olagoldstx/united-airline-secure-network?style=for-the-badge&labelColor=0f172a)](https://github.com/Olagoldstx/united-airline-secure-network)
+[![](https://img.shields.io/github/issues/Olagoldstx/united-airline-secure-network?style=for-the-badge&labelColor=0f172a)](https://github.com/Olagoldstx/united-airline-secure-network)
+[![](https://img.shields.io/github/issues-pr/Olagoldstx/united-airline-secure-network?style=for-the-badge&labelColor=0f172a)](https://github.com/Olagoldstx/united-airline-secure-network)
+[![](https://img.shields.io/github/repo-size/Olagoldstx/united-airline-secure-network?style=for-the-badge&labelColor=0f172a)](https://github.com/Olagoldstx/united-airline-secure-network)
+[![](https://img.shields.io/github/languages/top/Olagoldstx/united-airline-secure-network?style=for-the-badge&labelColor=0f172a)](https://github.com/Olagoldstx/united-airline-secure-network)
+[![](https://img.shields.io/github/actions/workflow/status/Olagoldstx/united-airline-secure-network/ci.yml?branch=main&style=for-the-badge&labelColor=0f172a)](https://github.com/Olagoldstx/united-airline-secure-network)
+</div>
+
+<!-- BADGES:END -->
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Olagoldstx/united-airline-secure-network/main/docs/branding/securethecloud.png" 
        alt="SecureTheCloud Banner" 
